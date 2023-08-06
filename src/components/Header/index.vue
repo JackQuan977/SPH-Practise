@@ -64,11 +64,11 @@ export default {
     goSearch() {
       //路由传递参数
       //第一种:字符串形式
-      // this.$router.push("/search/"+this.keyword+"?k="+this.keyword.toUpperCase());
+      // this.$router.push("/search");
       //对象写法
       // this.$router.push({name:"search",params:{keyword:this.keyword.toUpperCase()},query:{keyword:this.keyword}})
       this.$router.push({
-        name: "Search",
+        name: "search",
         query: { keyword: this.keyword },
         params: { keyword: "" || undefined },
       });

@@ -10,6 +10,10 @@ Vue.config.productionTip = false
 
 Vue.config.productionTip = false
 
+//测试
+import {reqCateGoryList} from '@/api';
+reqCateGoryList()
+
 new Vue({
   render: h => h(App),
   //需要把router进行注册
